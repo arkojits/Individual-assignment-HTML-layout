@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Food</title>
+  <link rel="stylesheet" href="style_alt.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>Campus Food</h1>
+      <p>Find today's meals around Metropolia.</p>
+    </div>
+    <a href="#restaurants" class="button">Restaurants</a>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Today's lunch</p>
+      <h2>Simple food, close to campus.</h2>
+      <p>Choose a restaurant and check the daily menu.</p>
+    </section>
+
+    <section class="filters" aria-label="Restaurant filters">
+      <label>
+        City
+        <select>
+          <option>All cities</option>
+          <option>Helsinki</option>
+          <option>Espoo</option>
+          <option>Vantaa</option>
+        </select>
+      </label>
+
+      <label>
+        Provider
+        <select>
+          <option>All providers</option>
+          <option>Food & Co</option>
+          <option>Metka Cafe</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="restaurants" class="restaurant-grid">
+      <article class="restaurant-card selected">
+        <div>
+          <p class="city">Helsinki</p>
+          <h3>Metropolia Myllypuro</h3>
+        </div>
+        <span>★</span>
+      </article>
+
+      <article class="restaurant-card">
+        <div>
+          <p class="city">Vantaa</p>
+          <h3>Metropolia Myyrmäki</h3>
+        </div>
+        <span>☆</span>
+      </article>
+
+      <article class="restaurant-card">
+        <div>
+          <p class="city">Espoo</p>
+          <h3>Metropolia Karamalmi</h3>
+        </div>
+        <span>☆</span>
+      </article>
+    </section>
+
+    <section class="menu">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow">Metropolia Myllypuro</p>
+          <h2>Today's menu</h2>
+        </div>
+        <span class="date">Daily Menu</span>
+      </div>
+
+      <div class="meal-list">
+        <article class="meal">
+          <div>
+            <p class="meal-type">Main</p>
+            <h3>Salmon Soup with Rye Bread</h3>
+          </div>
+          <span class="tag">L, G</span>
+        </article>
+
+        <article class="meal">
+          <div>
+            <p class="meal-type">Vegetarian</p>
+            <h3>Sweet Potato & Chickpea Curry</h3>
+          </div>
+          <span class="tag">V, G</span>
+        </article>
+
+        <article class="meal">
+          <div>
+            <p class="meal-type">Dessert</p>
+            <h3>Berry Quark</h3>
+          </div>
+          <span class="tag">L</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Campus Food • Simple HTML & CSS</p>
+  </footer>
+</body>
+</html>
